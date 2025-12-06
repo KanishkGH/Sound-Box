@@ -1,0 +1,87 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  background-attachment: fixed;
+  color: #fff;
+}
+
+h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+
+.soundboard {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  gap: 20px;
+  padding: 25px;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.sound-btn {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sound-btn:hover {
+  background: #ffffff;
+  transform: scale(1.05);
+}
+
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.controls label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+input[type="range"] {
+  width: 120px;
+}
+
+
+#muteBtn {
+  padding: 8px 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #ffffff;
+  transition: 0.2s;
+}
+
+#muteBtn:hover {
+  transform: scale(1.05);
+}
